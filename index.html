@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="bootstrap.css">
+	</head>
+	<title>WHHATTTT UPPP?</title>
+	<body>
+		<div class="container">
+			<div class="jumbotron mt-5">
+				<div class="display-3">HELLO JS</div>	
+				<br><br>
+				<hr>
+			</div>		
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+
+		<p id="yeno">hello da</p>
+
+		<button onclick="simplejs()">using simplejs</button>
+		<button onclick="jqueryjs()">jquery</button>
+		<script>
+
+			function simplejs(){
+				var p=document.getElementById("yeno");
+			p.innerHTML="whhhattt upp niggga";
+			}
+
+
+
+			function jqueryjs() {
+				$("#yeno").html("whhhattt upp niggga");
+				console.log("jq");
+			}
+		</script>
+		<script src="scope.js"></script>
+	</body>
+</html>
