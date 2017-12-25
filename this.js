@@ -20,5 +20,6 @@ var c={
     }   
 
 }
-console.log("name in global : " + name );
+
 c.log();
+console.log("name in global : " + name );

@@ -5,29 +5,37 @@
 	<title>WHHATTTT UPPP?</title>
 	<body>
 		<div class="container">
-			<div class="jumbotron mt-5">
-				<div class="display-3">HELLO JS</div>	
-				<br><br>
-				<hr>
-			</div>		
+				<div class="jumbotron mt-5">
+					<div class="display-3">HELLO JS</div>	
+					<br><br>
+					<hr>
+				</div>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+
+			<p id="yeno">hello da</p>
+
+			<button onclick="simplejs()" class="btn btn-primary">using simplejs</button>
+			<button onclick="jqueryjs()" class="btn btn-primary">jquery</button>
+			<script>
+				var g=true;
+				function simplejs(){
+					var p=document.getElementById("yeno");
+					if(g)
+						p.innerHTML="whhhattt upp niggga";
+					else
+						p.innerHTML="yeno"	
+					switcher();	
+				}
+				function switcher(){g=!g;}
+				function jqueryjs() {
+					if(g)
+						$("#yeno").html("whhhattt upp niggga");
+					else	
+						$("#yeno").html("yeno");
+					switcher();
+				}
+			</script>
+			<script src="arrugument.js"></script>
 		</div>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-
-		<p id="yeno">hello da</p>
-
-		<button onclick="simplejs()">using simplejs</button>
-		<button onclick="jqueryjs()">jquery</button>
-		<script>
-
-			function simplejs(){
-				var p=document.getElementById("yeno");
-			p.innerHTML="whhhattt upp niggga";
-			}
-			function jqueryjs() {
-				$("#yeno").html("whhhattt upp niggga");
-			}
-		</script>
-		<script src="this.js"></script>
 	</body>
 </html>
